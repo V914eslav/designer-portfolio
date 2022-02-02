@@ -6,6 +6,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
+    <!-- <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="img/favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="img/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="img/favicons/favicon-16x16.png"
+  /> -->
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
     <meta name="format-detection" content="telephone=no" />
     <meta name="description" content="Hotel Amarica" />
@@ -37,7 +55,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__body">
+        <div class="header__inner">
           <div class="user">
             <div class="user__avatar">
               <img
@@ -55,15 +73,56 @@
             </div>
           </div>
           <nav class="nav">
-            <a href="#" class="nav__link active">work</a>
+            <a href="#" class="nav__link">work</a>
             <a href="#" class="nav__link">about me</a>
             <a href="#" class="nav__link">blog</a>
-            <a href="#" class="nav__link">hire me</a>
-            <!-- <a href="#" class="nav__link"></a> -->
+            <a href="#" class="nav__link">contact</a>
+            <a href="#" class="nav__link nav__link--btn">hire me</a>
           </nav>
         </div>
       </div>
     </header>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <div class="intro__content">
+            <h2 class="intro__subtitle">Hello,I'm</h2>
+            <h1 class="intro__title">Lewis Nathaniel</h1>
+            <div class="intro__prof">UI &amp; UX Designer</div>
+
+            <div class="social">
+              <div class="social">
+                <a href="#" class="social__link"
+                  ><img src="images/intro/behance.svg" alt="social__img"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img src="images/intro/dribbble.svg" alt="social__img"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img src="images/intro/in.svg" alt="social__img"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img src="images/intro/facebook.svg" alt="social__img"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img src="images/intro/instagram.svg" alt="social__img"
+                /></a>
+                <a href="#" class="social__link"
+                  ><img src="images/intro/twitter.svg" alt="social__img"
+                /></a>
+              </div>
+            </div>
+            <a class="btn" href="#">HIRE ME</a>
+            <button class="btn" type="button">SEE MY RESUME</button>
+          </div>
+          <img
+            class="intro__photo"
+            src="images/intro/photo.png"
+            alt="photo__photo"
+          />
+        </div>
+      </div>
+    </section>
 
     <footer class="footer"></footer>
   </body>
