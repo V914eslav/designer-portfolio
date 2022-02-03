@@ -1,0 +1,37 @@
+// main:../style.less
+.work {
+  overflow: hidden;
+  box-shadow: 0 0 4px fade(@black, 25%);
+  border-radius: 10px;
+  transition: box-shadow 0.2s linear;
+  &:hover {
+    box-shadow: 0 0 25px fade(@black, 25%);
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  &__content {
+    padding: 1rem 0.8rem;
+  }
+  &__cat {
+    font-size: 0.8rem;
+    color: @black;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.06em;
+    color: @black;
+    text-transform: uppercase;
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+  }
+  // &__date {
+
+  // }
+}
