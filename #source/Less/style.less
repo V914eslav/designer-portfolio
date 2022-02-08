@@ -10,6 +10,9 @@ body {
   margin: 0;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 1rem;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
@@ -42,5 +45,7 @@ p {
 @import "blocks/news";
 @import "blocks/articles";
 @import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/modal-work";
 
 @import "blocks/helpers";
