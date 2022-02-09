@@ -1,0 +1,28 @@
+// main:../style.less
+.progress-bar {
+  margin-top: 1.5rem;
+  margin-bottom: 2.6rem;
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 0.2rem;
+    font-size: 0.94rem;
+    font-weight: 300;
+  }
+
+  &__progress-line {
+    margin-top: 5px;
+    margin-left: 1.2em;
+    width: 139px;
+    height: 6px;
+
+    background-color: #efefef;
+    .progress {
+      height: 100%;
+      background-color: @gray;
+      transition: width 0.2s linear;
+    }
+  }
+}
