@@ -81,7 +81,12 @@
             <a href="#" class="nav__link">about me</a>
             <a href="#" class="nav__link">blog</a>
             <a href="#" class="nav__link">contact</a>
-            <a href="#" class="nav__link nav__link--btn">hire me</a>
+            <a
+              href="#"
+              class="nav__link nav__link--btn"
+              data-modal="#modal_hire_me"
+              >hire me</a
+            >
           </nav>
         </div>
         <!--/.header__inner  -->
@@ -118,8 +123,10 @@
                 /></a>
               </div>
             </div>
-            <a class="btn" href="#">HIRE ME</a>
-            <button class="btn" type="button">SEE MY RESUME</button>
+            <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            <button class="btn" type="button" data-modal="#modal_resume">
+              SEE MY RESUME
+            </button>
           </div>
           <img
             class="intro__photo"
@@ -144,7 +151,11 @@
           >
         </div>
         <div class="portfolio">
-          <div class="portfolio__col" data-cat="app">
+          <div
+            class="portfolio__col"
+            data-cat="app"
+            data-modal="#modal_project_1"
+          >
             <div class="work">
               <img
                 src="https://place-hold.it/370x300"
@@ -291,8 +302,10 @@
                 praesentium suscipit aut.
               </p>
             </div>
-            <a class="btn" href="#">HIRE ME</a>
-            <button class="btn" type="button">SEE MY RESUME</button>
+            <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+            <button class="btn" type="button" data-modal="#modal_resume">
+              SEE MY RESUME
+            </button>
           </div>
           <!-- /.about__content-->
         </div>
@@ -506,7 +519,10 @@
             <a href="#" class="footer__nav-link">About me</a>
             <a href="#" class="footer__nav-link">Blog</a>
             <a href="#" class="footer__nav-link">Contact</a>
-            <a href="#" class="footer__nav-link footer__nav-link--btn"
+            <a
+              href="#"
+              class="footer__nav-link footer__nav-link--btn"
+              data-modal="#modal_hire_me"
               >Hire me</a
             >
           </nav>
@@ -515,9 +531,9 @@
       </div>
       <!-- /.container-->
     </footer>
-    <div class="modal" style="display: none">
+    <div class="modal" id="modal_project_1">
       <div class="modal__dialog">
-        <button type="button" class="modal__close">
+        <button type="button" class="modal__close" data-close>
           <img src="images/modal/modal-close.svg" alt="close" />
         </button>
         <div class="modal-work">
@@ -586,9 +602,9 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" style="display: none">
+    <div class="modal" id="modal_resume">
       <div class="modal__dialog">
-        <button type="button" class="modal__close">
+        <button type="button" class="modal__close" data-close>
           <img src="images/modal/modal-close.svg" alt="close" />
         </button>
         <div class="modal__content">
@@ -740,7 +756,7 @@
           </div>
           <!-- /.timeline -->
           <div class="text-center">
-            <a href="#" class="btn">Hire me</a>
+            <a href="#" class="btn" data-modal="#modal_hire_me">Hire me</a>
           </div>
         </div>
         <!-- /.modal__content -->
@@ -748,9 +764,9 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" style="display: none">
+    <div class="modal" id="modal_hire_me">
       <div class="modal__dialog modal__dialog--sm">
-        <button type="button" class="modal__close">
+        <button type="button" class="modal__close" data-close>
           <img src="images/modal/modal-close.svg" alt="close" />
         </button>
 
