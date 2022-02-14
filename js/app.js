@@ -1,4 +1,6 @@
 $(function () {
+  const worksSlider = $('[data-slider="slick"]');
+
   /*  Filter
   ==========================*/
   let filter = $("[data-filter]");
@@ -52,6 +54,8 @@ $(function () {
       modalParent.removeClass("show");
       $("body").removeClass("no-scroll");
     }, 200);
+
+    worksSlider.slick("setPosition");
   });
   $(".modal").on("click", function (event) {
     let $this = $(this);
@@ -68,4 +72,29 @@ $(function () {
   $(".modal__dialog").on("click", function (event) {
     event.stopPropagation();
   });
+});
+
+/*  Slider: https://kenwheeler.github.io/slick/
+  ==========================*/
+
+$('[data-slider="slick"]').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: true,
+  arrows: false,
+  dots: true,
+});
+$(".slickPrev").on("click", function (event) {
+  event.preventDefault();
+
+  let currentSilder = $(this).parents(".modal").find('[data-slider="slick"]');
+
+  currentSilder.slick("slickPrev");
+});
+$(".slickNext").on("click", function (event) {
+  event.preventDefault();
+  let currentSilder = $(this).parents(".modal").find('[data-slider="slick"]');
+
+  currentSilder.slick("slickNext");
 });
